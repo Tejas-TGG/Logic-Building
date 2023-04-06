@@ -1,0 +1,48 @@
+////////////////////////////////////////////////////////////////////////////////////////////
+// 
+// Acceept charecter from user and check whether its is alphabet or not
+// 
+// Input- F
+// 
+// output-true
+// ///////////////////////////////////////////////////////////////////////////////////////////
+
+
+#include <iostream>
+using namespace std;
+
+bool checkcapital(char ch)
+{
+    if (ch >= 'A' && ch <= 'Z' || ch >= 'a' && ch <= 'z')
+    {
+        return true;
+    }
+
+    else
+    {
+        return false;
+    }
+}
+
+int main()
+{
+    char cValue = '\0';
+    bool bRet = false;
+
+    cout << "Enter charecter \n";
+    cin >> cValue;
+
+    bRet = checkcapital(cValue);
+
+    if (bRet == true)
+    {
+        cout << "It is charecter\n";
+    }
+
+    else
+    {
+        cout << "It is not charecter\n";
+    }
+
+    return 0;
+}
